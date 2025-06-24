@@ -23,3 +23,9 @@ python3 AddinUtil.py
 ```
 
 ---
+
+## Useful links
+
+- https://lolbas-project.github.io/
+
+---
