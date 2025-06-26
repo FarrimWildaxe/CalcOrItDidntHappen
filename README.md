@@ -29,6 +29,7 @@ python3 AddinUtil.py
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
 
 - Microsoft Intune admin center -> Devices -> Configuration -> New Policy
+  - Assignment: Devices only, NOT users. 
   - Platform: Windows 10 and later
   - Policy Type: Custom
   - Add OMA-URI Settings rule
@@ -42,15 +43,15 @@ python3 AddinUtil.py
 **String Value sample**
 
 ```xml
-<AppLockerPolicy Version="1">
-  <RuleCollection Type="Exe" EnforcementMode="Enabled">
-    <FilePathRule Id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" Name="Block AddInUtil.exe" Action="Deny" UserOrGroupSid="S-1-1-0">
-      <Conditions>
-        <FilePathCondition Path="C:\Windows\Microsoft.NET\Framework\v4.0.30319\AddInUtil.exe" />
-      </Conditions>
-    </FilePathRule>
-  </RuleCollection>
-</AppLockerPolicy>
+<RuleCollection Type="Exe" EnforcementMode="Enabled">
+  <FilePublisherRule Id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" Name="ADDINUTIL.EXE, i MICROSOFT® .NET FRAMEWORK, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="ADDINUTIL.EXE">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+</RuleCollection>
 ```
 
 ### Create AppLockerPolicy XML files
