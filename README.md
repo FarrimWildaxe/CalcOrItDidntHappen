@@ -36,7 +36,7 @@ python3 AddinUtil.py
 **OMA-URI**
 
 ```bash
-./Device/Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions
 ```
 
 **String Value sample**
