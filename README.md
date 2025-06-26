@@ -29,9 +29,9 @@ python3 AddinUtil.py
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
 
 - Microsoft Intune admin center -> Devices -> Configuration -> New Policy
-- Platform: Windows 10 and later
-- Policy Type: Custom
-- Add OMA-URI Settings rule
+  - Platform: Windows 10 and later
+  - Policy Type: Custom
+  - Add OMA-URI Settings rule
 
 **OMA-URI**
 
@@ -52,6 +52,17 @@ python3 AddinUtil.py
   </RuleCollection>
 </AppLockerPolicy>
 ```
+
+### Create AppLockerPolicy XML files
+
+*Create your AppLocker policy in a lab machine via secpol.msc or GPO, export to XML, and deploy it.*
+
+- Windows Key + R
+- secpol.msc
+- Application Control Policies -> AppLocker -> Executable Rules -> Create new Rule
+  - Permissions Action: Deny
+  - Conditions: Path or File hash
+- Right click on AppLocker -> Export Policy
 
 ---
 
