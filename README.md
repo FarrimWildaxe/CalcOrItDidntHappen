@@ -36,7 +36,7 @@ python3 AddinUtil.py
 **OMA-URI**
 
 ```bash
-./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{GROUPING}/EXE/Policy
 ```
 
 **String Value sample**
@@ -44,7 +44,7 @@ python3 AddinUtil.py
 ```xml
 <AppLockerPolicy Version="1">
   <RuleCollection Type="Exe" EnforcementMode="Enabled">
-    <FilePathRule Id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" Name="Block AddInUtil.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <FilePathRule Id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" Name="Block AddInUtil.exe" Action="Deny" UserOrGroupSid="S-1-1-0">
       <Conditions>
         <FilePathCondition Path="C:\Windows\Microsoft.NET\Framework\v4.0.30319\AddInUtil.exe" />
       </Conditions>
