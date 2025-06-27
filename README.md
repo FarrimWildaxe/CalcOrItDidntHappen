@@ -104,9 +104,9 @@ python3 Aspnet_Compiler.py
 ## Useful links
 
 - https://lolbas-project.github.io/
+- https://intune.microsoft.com/
 - https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/design/applications-that-can-bypass-appcontrol
 - https://learn.microsoft.com/en-us/windows/client-management/mdm/applocker-csp
-- https://intune.microsoft.com/
 - https://learn.microsoft.com/en-us/windows/client-management/mdm/applocker-csp#applicationlaunchrestrictionsgroupingexepolicy
 - https://learn.microsoft.com/en-us/troubleshoot/mem/intune/device-configuration/deploy-oma-uris-to-target-csp-via-intune
 
