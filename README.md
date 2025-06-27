@@ -14,13 +14,28 @@ This repo showcases practical PoCs using LOLBAS techniques to execute commands w
 
 ## RED
 
-### AddinUtil.py
+### AddinUtil
 
-- https://github.com/pwntester/ysoserial.net
+**.NET Tool used for updating cache files for Microsoft Office Add-Ins.**
 
 ```bash
 python3 AddinUtil.py
 ```
+
+- https://github.com/pwntester/ysoserial.net
+- https://lolbas-project.github.io/lolbas/Binaries/Addinutil/
+
+---
+
+### Aspnet_Compiler
+
+**ASP.NET Compilation Tool**
+
+```bash
+python3 Aspnet_Compiler.py
+```
+
+- https://lolbas-project.github.io/lolbas/Binaries/Aspnet_Compiler/
 
 ---
 
