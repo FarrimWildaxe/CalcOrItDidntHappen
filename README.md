@@ -42,15 +42,13 @@ python3 AddinUtil.py
 **String Value sample**
 
 ```xml
-<AppLockerPolicy Version="1">
-  <RuleCollection Type="Exe" EnforcementMode="Enabled">
-    <FilePathRule Id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" Name="Block AddInUtil.exe" Action="Deny" UserOrGroupSid="S-1-1-0">
-      <Conditions>
-        <FilePathCondition Path="C:\Windows\Microsoft.NET\Framework\v4.0.30319\AddInUtil.exe" />
-      </Conditions>
-    </FilePathRule>
-  </RuleCollection>
-</AppLockerPolicy>
+<RuleCollection Type="Exe" EnforcementMode="Enabled">
+  <FilePathRule Id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" Name="Block AddInUtil.exe" Action="Deny" UserOrGroupSid="S-1-1-0">
+    <Conditions>
+      <FilePathCondition Path="C:\Windows\Microsoft.NET\Framework\v4.0.30319\AddInUtil.exe" />
+    </Conditions>
+  </FilePathRule>
+</RuleCollection>
 ```
 
 ### Create AppLockerPolicy XML files
