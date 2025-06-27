@@ -36,11 +36,15 @@ python3 AddinUtil.py
 
 **OMA-URI**
 
+- The {Grouping} field can be assigned any string value, allowing users to create and define custom groups as needed.
+
 ```bash
 ./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{GROUPING}/EXE/Policy
 ```
 
-**String Value sample**
+**Basic XML String Value sample**
+
+- The following XML rules represent a basic ruleset and should be carefully reviewed and enhanced to meet your organizational requirements before applying them to your Intune OMA-URI policy.
 
 ```xml
   <RuleCollection Type="Exe" EnforcementMode="NotConfigured">
