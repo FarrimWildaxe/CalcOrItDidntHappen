@@ -29,6 +29,7 @@ python3 AddinUtil.py
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
 
 - Microsoft Intune admin center -> Devices -> Configuration -> New Policy
+  - Assignment: Devices only, NOT users. 
   - Platform: Windows 10 and later
   - Policy Type: Custom
   - Add OMA-URI Settings rule
@@ -42,13 +43,30 @@ python3 AddinUtil.py
 **String Value sample**
 
 ```xml
-<RuleCollection Type="Exe" EnforcementMode="Enabled">
-  <FilePathRule Id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" Name="Block AddInUtil.exe" Action="Deny" UserOrGroupSid="S-1-1-0">
-    <Conditions>
-      <FilePathCondition Path="C:\Windows\Microsoft.NET\Framework\v4.0.30319\AddInUtil.exe" />
-    </Conditions>
-  </FilePathRule>
-</RuleCollection>
+  <RuleCollection Type="Exe" EnforcementMode="NotConfigured">
+    <FilePathRule Id="{GUID}" Name="(Default Rule) All files located in the Program Files folder" Description="Allows members of the Everyone group to run applications that are located in the Program Files folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%PROGRAMFILES%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="{GUID}" Name="(Default Rule) All files located in the Windows folder" Description="Allows members of the Everyone group to run applications that are located in the Windows folder." UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="{GUID}" Name="(Default Rule) All files" Description="Allows members of the local Administrators group to run all applications." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+      <Conditions>
+        <FilePathCondition Path="*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePublisherRule Id="{GUID}" Name="ADDINUTIL.EXE, in MICROSOFT® .NET FRAMEWORK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="ADDINUTIL.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+  </RuleCollection>
 ```
 
 ### Create AppLockerPolicy XML files
