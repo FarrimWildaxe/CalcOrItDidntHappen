@@ -96,7 +96,7 @@ python3 Aspnet_Compiler.py
 - secpol.msc
 - Application Control Policies -> AppLocker -> Executable Rules -> Create new Rule
   - Permissions Action: Deny
-  - Conditions: Path or File hash
+  - Conditions: Publisher
 - Right click on AppLocker -> Export Policy
 
 ---
