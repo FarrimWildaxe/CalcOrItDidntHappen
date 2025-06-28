@@ -39,6 +39,19 @@ python3 Aspnet_Compiler.py
 
 ---
 
+### AppInstaller
+
+**Tool used for installation of AppX/MSIX applications on Windows 10**
+
+```bash
+python3 AppInstaller.py
+```
+
+- https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install
+- https://lolbas-project.github.io/lolbas/Binaries/AppInstaller/
+
+---
+
 ## BLUE
 
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
