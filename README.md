@@ -52,6 +52,19 @@ python3 AppInstaller.py
 
 ---
 
+
+### Schtasks
+
+**Schedule periodic tasks**
+
+```bash
+python3 Schtasks.py
+```
+
+- https://lolbas-project.github.io/lolbas/Binaries/Schtasks/
+
+---
+
 ## BLUE
 
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
