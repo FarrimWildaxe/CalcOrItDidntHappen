@@ -52,7 +52,6 @@ python3 AppInstaller.py
 
 ---
 
-
 ### Schtasks
 
 **Schedule periodic tasks**
@@ -62,6 +61,20 @@ python3 Schtasks.py
 ```
 
 - https://lolbas-project.github.io/lolbas/Binaries/Schtasks/
+
+---
+
+### Atbroker
+
+**Assistive Technology (AT)**
+
+*Administrative Privileges Required*
+
+```bash
+python3 Atbroker.py
+```
+
+- https://lolbas-project.github.io/lolbas/Binaries/Atbroker/
 
 ---
 
