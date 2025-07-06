@@ -122,7 +122,6 @@ def write_appinstaller():
         </AppInstaller>
         """)
 
-
 def start_http_server():
     os.chdir(WEBROOT)
     handler = SimpleHTTPRequestHandler
