@@ -78,6 +78,17 @@ python3 Atbroker.py
 
 ---
 
+### Bitsadmin
+
+**Used for managing background intelligent transfer**
+
+```bash
+python3 Bitsadmin.py
+```
+
+- https://lolbas-project.github.io/lolbas/Binaries/Bitsadmin/
+
+---
 ## BLUE
 
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
