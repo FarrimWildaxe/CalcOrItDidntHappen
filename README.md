@@ -89,6 +89,19 @@ python3 Bitsadmin.py
 - https://lolbas-project.github.io/lolbas/Binaries/Bitsadmin/
 
 ---
+
+### CertOC
+
+**Used for installing certificates. Included in Windows Server**
+
+```bash
+python3 CertOC.py
+```
+
+- https://lolbas-project.github.io/lolbas/Binaries/Certoc/
+
+---
+
 ## BLUE
 
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
