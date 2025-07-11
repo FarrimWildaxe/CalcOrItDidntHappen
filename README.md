@@ -102,6 +102,20 @@ python3 CertOC.py
 
 ---
 
+### Certutil
+
+**Windows binary used for handling certificates**
+
+*Administrative Privileges Required*
+
+```bash
+python3 Certutil.py
+```
+
+- https://lolbas-project.github.io/lolbas/Binaries/Certutil/
+
+---
+
 ## BLUE
 
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
