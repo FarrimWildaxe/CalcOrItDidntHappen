@@ -116,6 +116,16 @@ python3 Certutil.py
 
 ---
 
+### Fodhelper
+
+**Manage optional features in Windows**
+
+```bash
+python3 Fodhelper.py
+```
+
+---
+
 ## BLUE
 
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
@@ -186,5 +196,6 @@ python3 Certutil.py
 - https://learn.microsoft.com/en-us/windows/client-management/mdm/applocker-csp
 - https://learn.microsoft.com/en-us/windows/client-management/mdm/applocker-csp#applicationlaunchrestrictionsgroupingexepolicy
 - https://learn.microsoft.com/en-us/troubleshoot/mem/intune/device-configuration/deploy-oma-uris-to-target-csp-via-intune
+- https://github.com/hfiref0x/UACME
 
 ---
