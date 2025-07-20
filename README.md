@@ -126,6 +126,18 @@ python3 Fodhelper.py
 
 ---
 
+### Control
+
+**Binary used to launch controlpanel items in Windows**
+
+```bash
+python3 Control.py
+```
+
+- https://lolbas-project.github.io/lolbas/Binaries/Control/
+
+---
+
 ## BLUE
 
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
