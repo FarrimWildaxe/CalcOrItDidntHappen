@@ -138,6 +138,18 @@ python3 Control.py
 
 ---
 
+### Csc
+
+**Binary file used by .NET Framework to compile C# code**
+
+```bash
+python3 Csc.py
+```
+
+- https://lolbas-project.github.io/lolbas/Binaries/Csc/
+
+---
+
 ## BLUE
 
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
