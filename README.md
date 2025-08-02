@@ -150,6 +150,18 @@ python3 Csc.py
 
 ---
 
+### Advpack
+
+**Utility for installing software and drivers with rundll32.exe**
+
+```bash
+python Advpack.py
+```
+
+- https://lolbas-project.github.io/lolbas/Libraries/Advpack/
+
+---
+
 ## BLUE
 
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
