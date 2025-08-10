@@ -162,6 +162,19 @@ python Advpack.py
 
 ---
 
+### Forfiles
+
+**Selects and executes a command on a file or set of files. This command is useful for batch processing.**
+
+```bash
+python Forfiles.py
+```
+
+- https://lolbas-project.github.io/lolbas/Binaries/Forfiles/
+
+
+---
+
 ## BLUE
 
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
