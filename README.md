@@ -175,6 +175,18 @@ python Forfiles.py
 
 ---
 
+### Ftp
+
+**A binary designed for connecting to FTP servers.**
+
+```bash
+python Ftp.py
+```
+
+- https://lolbas-project.github.io/lolbas/Binaries/Ftp/
+
+---
+
 ## BLUE
 
 ### Microsoft Intune Configuration - Blocking Unwanted Executables
